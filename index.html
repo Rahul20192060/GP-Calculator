@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Calculator</title>
+    <link rel="stylesheet" href="bootstrape.min.css">
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">GP CAL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<div class="wrapper">
+    <h1>GP Calculator</h1>
+    <p>Use this calculator to calculate grade point average (GPA) and generate a GPA report.
+        If you use percentage grades, have grades on a different scale or in high school with AP/IB classes,
+        please change the "Settings" to input specific values. Also use the settings to group courses into semesters
+        or to include past GPA.</p>
+    <div class="form-row">
+        <div class="col">
+            <input id="course-code" class="form-control" type="text" placeholder="Course Code">
+        </div>
+        <div class="col">
+            <input id="unit-load" class="form-control" type="number" placeholder="Unit Load" min="1" max="15">
+        </div>
+        <div class="col">
+            <select id="grade" class="form-control">
+                <option value="">Grade</option>
+                <option value="10">EX</option>
+                <option value="9">AA</option>
+                <option value="8">A+</option>
+                <option value="7">A</option>
+                <option value="6">B+</option>
+                <option value="5">B</option>
+                <option value="4">C+</option>
+                <option value="3">C</option>
+                <option value="2">D+</option>
+                <option value="1">D</option>
+                <option value="0">F</option>
+            </select>
+        </div>
+        <div class="col">
+            <input id="add" class="btn btn-primary" type="button" value="Add">
+
+        </div>
+    </div>
+    <table id="table" class="table table-bordered display-none">
+        <thead>
+        <tr>
+            <th>Course Code</th>
+            <th>Unit Load</th>
+            <th>Grade</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+        <tfoot id="tfoot">
+
+        </tfoot>
+    </table>
+    <div class="row">
+        <div class="col">
+            <input id="calc-gp" class="btn btn-success display-none" type="button" value="Calc GP">
+        </div>
+        <div class="col">
+            <input id="clear" class="btn btn-warning display-none" type="button" value="Clear">
+        </div>
+
+    </div>
+
+    <div class="col">
+        <input id="print" class="btn btn-primary" onclick="fun()" type="button" value="Print">
+
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
