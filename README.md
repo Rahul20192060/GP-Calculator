@@ -6,12 +6,12 @@ This is a GP Calculator with print document functionality.
 
 ## How to use the calculator
 
-•	Enter the course code for your respective courses.
-•	Select the corresponding credit units and grades score.
-•	Add the number of columns you want (i.e. the number of courses you want to calculate for) by clicking on the Add button.
-•	Click on Calc GP to calculate your GPA. You should now see your GPA and displayed below.
-•	Click the Print button to print the document.
-•	If you want to calculate your GP for another semester, simply click on Clear.
+-	Enter the course code for your respective courses.
+-	Select the corresponding credit units and grades score.
+-	Add the number of columns you want (i.e. the number of courses you want to calculate for) by clicking on the Add button.
+-	Click on Calc GP to calculate your GPA. You should now see your GPA and displayed below.
+-	Click the Print button to print the document.
+-	If you want to calculate your GP for another semester, simply click on Clear.
 
 
 ## Screenshots
